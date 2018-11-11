@@ -13,8 +13,9 @@ import {
   DropdownMenu,
   DropdownItem,
 Button} from 'reactstrap';
+import './Navbar.css'
 
-export default class Example extends React.Component {
+class Header extends React.Component {
 
   state ={
     isOpen: false
@@ -28,7 +29,7 @@ export default class Example extends React.Component {
     return (
       <div>
 
-        <Navbar  color="light" light expand="sm" className="">
+        <Navbar  color="light" light expand="sm" className="nav-wrapper">
           <Link to="/">rentra logo</Link>
 
           <NavbarToggler onClick={this.toggle} />
@@ -62,3 +63,4 @@ export default class Example extends React.Component {
     );
   }
 }
+export default Header;

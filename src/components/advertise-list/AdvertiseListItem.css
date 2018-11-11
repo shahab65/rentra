@@ -1,0 +1,19 @@
+.card-footer-father{
+    display: flex;
+}
+.card-footer-first-child{
+    flex: 3;
+    border-left: 1px dashed black
+}
+.card-footer-second-child{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card-footer{
+    padding: 0;
+}
+.footer-left-bottom{
+    border-top: 1px dashed black;
+}
