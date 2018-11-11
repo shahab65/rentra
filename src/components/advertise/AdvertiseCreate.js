@@ -52,15 +52,6 @@ class AdvertiseCreate extends Component {
           <div>
 
             <Form>
-              <ul className="list-inline">
-                <li className="list-inline-item"><a className="social-icon text-xs-center" target="_blank"
-                                                    href="#">FB</a></li>
-                <li className="list-inline-item"><a className="social-icon text-xs-center" target="_blank"
-                                                    href="#">G+</a></li>
-                <li className="list-inline-item"><a className="social-icon text-xs-center" target="_blank" href="#">T
-                </a>
-                </li>
-              </ul>
               <div className="container mb-5">
                 <h4>ثبت آگهی</h4>
                 <div className="row">
@@ -148,7 +139,7 @@ class AdvertiseCreate extends Component {
                             width="128" height="128"
                             alt=""/>
                           :
-                          <a onClick={() => this.fileInput.click()}>
+                          <a className="btn" onClick={() => this.fileInput.click()}>
                             <img src={AddImageIcon} width="128" height="128" alt=""/>
                           </a>}
 
@@ -161,7 +152,7 @@ class AdvertiseCreate extends Component {
                             width="128" height="128"
                             alt=""/>
                           :
-                          <a onClick={() => this.fileInput.click()}>
+                          <a className="btn" onClick={() => this.fileInput.click()}>
                             <img src={AddImageIcon} width="128" height="128" alt=""/>
                           </a>}
 
@@ -174,7 +165,7 @@ class AdvertiseCreate extends Component {
                             width="128" height="128"
                             alt=""/>
                           :
-                          <a onClick={() => this.fileInput.click()}>
+                          <a className="btn" onClick={() => this.fileInput.click()}>
                             <img src={AddImageIcon} width="128" height="128" alt=""/>
                           </a>}
 
@@ -187,7 +178,7 @@ class AdvertiseCreate extends Component {
                             width="128" height="128"
                             alt=""/>
                           :
-                          <a onClick={() => this.fileInput.click()}>
+                          <a className="btn" onClick={() => this.fileInput.click()}>
                             <img src={AddImageIcon} width="128" height="128" alt=""/>
                           </a>}
 
@@ -197,8 +188,8 @@ class AdvertiseCreate extends Component {
                       عکس شانس دیده شدن آگهی تان را پنج برابر کنید</h6>
                     <div className="row">
                       <div className="col-sm-12">
-                        <a>
-                          <img src={UploadDefault} alt=""/>
+                        <a className="btn" onClick={() => this.fileInput.click()}>
+                        <img src={UploadDefault} alt=""/>
                         </a>
                       </div>
                     </div>

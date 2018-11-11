@@ -1,3 +1,7 @@
 .nav-wrapper{
     background-color: khaki !important;
 }
+
+.rtl .nav-wrapper .dropdown-menu{
+    right: auto;
+}

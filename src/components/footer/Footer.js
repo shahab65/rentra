@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import './Footer.css';
-
+import { FaBeer, FaInstagram, FaGoogle, FaTelegramPlane } from 'react-icons/fa';
 class Footer extends Component {
   render() {
     return (
       <div className="footer-wrapper" id="footer">
         <div className="container">
-          <div className="row mt-5 mb-3">
+          <div className="row mt-5 mb-4">
             <div className="col-sm-3">
               رنترا:پلتفرم اجاره وسایل و تجهیزات
             </div>
@@ -28,11 +28,37 @@ class Footer extends Component {
             <div className="col-sm-3"></div>
 
           </div>
-          <div className="bg-danger">
-            <div className="">
-              <p>
-                کليه حقوق اين سایت متعلق به شرکت نت تجارت اهورا (شیپور) است.
-              </p>
+
+        </div>
+        <div style={{backgroundColor:"#d0d1d3"}}>
+          <div className="container">
+            <div className="row mt-5 py-2">
+              <div className="col-sm-6">
+                <p>
+                  کليه حقوق اين سایت متعلق به شرکت رنترا است.
+                </p>
+              </div>
+              <div className="col-sm-6 text-left">
+
+                <ul className="list-inline">
+                  <li className="list-inline-item">
+                    <a href="#">
+                      <FaTelegramPlane />
+                    </a>
+                  </li>
+                  <li className="list-inline-item pr-2">
+                    <a href="#">
+                      <FaInstagram />
+                    </a>
+                  </li>
+                  <li className="list-inline-item">
+                    <a href="#">
+                      <FaGoogle />
+                    </a>
+                  </li>
+                </ul>
+
+              </div>
             </div>
           </div>
         </div>

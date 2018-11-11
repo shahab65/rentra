@@ -12,19 +12,28 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-Button} from 'reactstrap';
+  Dropdown,
+Button
+} from 'reactstrap';
+import {FaUser} from 'react-icons/fa';
 import './Navbar.css'
 
 class Header extends React.Component {
 
   state ={
-    isOpen: false
+    isOpen: false,
+    dropdownOpen: false
   };
   toggle = () => {
     this.setState((prevState) => ({
       isOpen: !prevState.isOpen
     }));
   };
+  toggleDropdown = () => {
+    this.setState({
+      dropdownOpen: !this.state.dropdownOpen
+    });
+  }
   render() {
     return (
       <div>
@@ -50,9 +59,19 @@ class Header extends React.Component {
               <NavItem>
                 <NavLink to="/advertise/"><Button>ثبت آگهی</Button></NavLink>
               </NavItem>
-              <NavItem>
-                <NavLink to="/dashboard/"><Button>داشبورد</Button></NavLink>
-              </NavItem>
+              <Dropdown nav isOpen={this.state.dropdownOpen} toggle={this.toggleDropdown}>
+                <DropdownToggle nav caret>
+                  <FaUser/>
+                </DropdownToggle>
+                <DropdownMenu>
+                  <DropdownItem >حساب کاربری</DropdownItem>
+                  <DropdownItem tag={Link} to="/dashboard">
+                    داشبورد
+                  </DropdownItem>
+                  <DropdownItem divider />
+                  <DropdownItem> خروج </DropdownItem>
+                </DropdownMenu>
+              </Dropdown>
 
             </Nav>
 
