@@ -49,7 +49,7 @@ class AdvertiseCreate extends Component {
           console.log(data);
         }}
         render={({values, touched, errors, handleChange}) => (
-          <div>
+          <div className="mt-4">
 
             <Form>
               <div className="container mb-5">

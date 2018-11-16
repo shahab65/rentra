@@ -5,16 +5,20 @@ import Navbar from './components/navbar/Navbar';
 import Home from './components/home/Home'
 import AdvertiseCreate from './components/advertise/AdvertiseCreate'
 import Footer from './components/footer/Footer';
-import Dashboard from './components/dashboard/Dashboard'
-import './assests/css/global.css'
+// import Dashboard from './components/dashboard/Dashboard'
+import Dashboard from './components/dashboard2/Dashboard'
+import './assests/css/global.css';
+// import Slide from './components/dashboard/burgermenu/sidebar'
 export const history = createHistory();
 
 class App extends Component {
   render() {
     return (
       <Router history={history}>
-
+<div>
         <div className="rtl">
+        {/*<Slide/>*/}
+
           <Navbar/>
 
           <div id="body">
@@ -22,12 +26,14 @@ class App extends Component {
             <Switch>
               <Route path='/' component={Home} exact/>
               <Route path='/advertise' component={AdvertiseCreate}/>
-              <Route path='/dashboard' component={Dashboard}/>
+              <Route path='/dashboard' component={Dashboard} exact/>
+              {/*<Route path='/dashboard2' component={Dashboard2}/>*/}
             </Switch>
 
           </div>
           <Footer/>
         </div>
+</div>
       </Router>
     );
   }

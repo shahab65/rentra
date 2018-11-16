@@ -2,18 +2,16 @@ import React from 'react';
 import {Link, NavLink} from 'react-router-dom';
 
 import {
+  Button,
   Collapse,
+  Dropdown,
+  DropdownItem,
+  DropdownMenu,
+  DropdownToggle,
+  Nav,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  Dropdown,
-Button
+  NavItem
 } from 'reactstrap';
 import {FaUser} from 'react-icons/fa';
 import './Navbar.css'
@@ -33,12 +31,12 @@ class Header extends React.Component {
     this.setState({
       dropdownOpen: !this.state.dropdownOpen
     });
-  }
+  };
   render() {
     return (
       <div>
 
-        <Navbar  color="light" light expand="sm" className="nav-wrapper">
+        <Navbar  color="dark" dark expand="sm" className="nav-wrapper">
           <Link to="/">rentra logo</Link>
 
           <NavbarToggler onClick={this.toggle} />
@@ -59,17 +57,24 @@ class Header extends React.Component {
               <NavItem>
                 <NavLink to="/advertise/"><Button>ثبت آگهی</Button></NavLink>
               </NavItem>
-              <Dropdown nav isOpen={this.state.dropdownOpen} toggle={this.toggleDropdown}>
+              <Dropdown  nav isOpen={this.state.dropdownOpen} toggle={this.toggleDropdown}>
                 <DropdownToggle nav caret>
                   <FaUser/>
                 </DropdownToggle>
-                <DropdownMenu>
-                  <DropdownItem >حساب کاربری</DropdownItem>
+                <DropdownMenu className="bg-dark navbar-dropdown">
+                  <DropdownItem tag={Link} to="/dashboard">
+                    حساب کاربری
+                  </DropdownItem>
                   <DropdownItem tag={Link} to="/dashboard">
                     داشبورد
                   </DropdownItem>
+                  <DropdownItem tag={Link} to="/dashboard2">
+                    داشبورد2
+                  </DropdownItem>
                   <DropdownItem divider />
-                  <DropdownItem> خروج </DropdownItem>
+                  <DropdownItem tag={Link} to="/dashboard">
+                    خروج
+                  </DropdownItem>
                 </DropdownMenu>
               </Dropdown>
 

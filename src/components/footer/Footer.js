@@ -1,10 +1,13 @@
 import React, {Component} from 'react';
 import './Footer.css';
-import { FaBeer, FaInstagram, FaGoogle, FaTelegramPlane } from 'react-icons/fa';
+import { FaInstagram, FaGoogle, FaTelegramPlane } from 'react-icons/fa';
+import googlePlayImg from '../../assests/img/google-play.png';
+import cafeBazaar from '../../assests/img/cafebazaar.png';
+
 class Footer extends Component {
   render() {
     return (
-      <div className="footer-wrapper" id="footer">
+      <div className="footer-wrapper bg-dark" id="footer">
         <div className="container">
           <div className="row mt-5 mb-4">
             <div className="col-sm-3">
@@ -22,8 +25,18 @@ class Footer extends Component {
             </div>
             <div className="col-sm-2">
               <div>دانلود اپلیکیشن</div>
-              <div>نسخه اندروید</div>
-              <div>دانلود اپلیکیشن</div>
+              <div className="m-1">
+                <a href="#" target='_blank'
+                   title='دانلود اپلیکیشن رنترا از سایت google play'>
+                  <img src={googlePlayImg} alt=""/>
+                </a>
+              </div>
+              <div className="m-1">
+                <a href="#" target='_blank'
+                   title='دانلود اپلیکیشن رنترا از سایت bazar'>
+                  <img src={cafeBazaar} alt=""/>
+                </a>
+              </div>
             </div>
             <div className="col-sm-3"></div>
 

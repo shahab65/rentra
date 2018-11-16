@@ -1,7 +1,15 @@
-.nav-wrapper{
-    background-color: khaki !important;
-}
+/*.nav-wrapper{*/
+    /*background-color: khaki !important;*/
+/*}*/
 
 .rtl .nav-wrapper .dropdown-menu{
     right: auto;
+}
+
+.nav-item a {
+    color: #ffffff;
+}
+
+.nav-item a:hover {
+    text-decoration: underline;
 }
