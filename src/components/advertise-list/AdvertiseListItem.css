@@ -17,3 +17,9 @@
 .footer-left-bottom{
     border-top: 1px dashed black;
 }
+
+.ad-card  {
+    border: 7px solid #f2f2f2;
+    border-right-width: 15px;
+    border-left-width: 15px;
+}

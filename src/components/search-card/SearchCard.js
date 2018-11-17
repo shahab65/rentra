@@ -13,7 +13,7 @@ class SearchCard extends Component {
             <div className="row">
               <div className="col-sm-10">
                 <input
-                  className="form-control"
+                  className="form-control "
                   placeholder="جست و جو در همه آگهی ها"
                 />
               </div>

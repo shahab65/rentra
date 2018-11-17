@@ -44,15 +44,15 @@ class PaginationAdvertiseList extends React.Component {
     return (
 
       <div className="container pagination-advertise-list-wrapper">
-        <div className="row">
+        <div className="row ">
           {this.state.advertiseList.map((ad, i) =>
-            <div className="col-sm-3" key={i}>
+            <div className="col-sm-3 mb-5" key={i}>
               <AdvertiseListItem/>
 
             </div>
           )}
         </div>
-        <div className="pagination-wrapper">
+        <div className="pagination-wrapper ltr">
 
           <Pagination aria-label="Page navigation example"
                       className="d-flex justify-content-center mt-5">

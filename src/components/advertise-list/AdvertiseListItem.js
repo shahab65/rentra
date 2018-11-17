@@ -7,7 +7,7 @@ import Img from '../../assests/img/test.jpg'
 class AdvertiseListItem extends Component {
   render() {
     return (
-          <Card>
+          <Card className="ad-card">
             <CardImg top width="100%" src={Img} alt="Card image cap" />
 
             <CardFooter>
