@@ -11,7 +11,8 @@ import {
   Nav,
   Navbar,
   NavbarToggler,
-  NavItem
+  NavItem,
+  NavbarBrand
 } from 'reactstrap';
 import {FaUser} from 'react-icons/fa';
 import './Navbar.css'
@@ -36,9 +37,9 @@ class Header extends React.Component {
     return (
       <div>
 
-        <Navbar  color="dark" dark expand="sm" className="nav-wrapper">
-          <Link to="/">rentra logo</Link>
-
+        <Navbar  color="dark" dark expand="sm" className="nav-wrapper border-bottom">
+          {/*<Link to="/">rentra logo</Link>*/}
+          <NavbarBrand href="/">reactstrap</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="mr-auto" navbar>
@@ -61,7 +62,7 @@ class Header extends React.Component {
                 <DropdownToggle nav caret>
                   <FaUser/>
                 </DropdownToggle>
-                <DropdownMenu className="bg-dark navbar-dropdown">
+                <DropdownMenu right className="bg-dark navbar-dropdown">
                   <DropdownItem tag={Link} to="/dashboard">
                     حساب کاربری
                   </DropdownItem>

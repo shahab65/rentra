@@ -18,7 +18,7 @@ class App extends Component {
     return (
       <div id="dashboard">
         <div className="wrapper">
-          <nav id="sidebar" className={`text-center ${this.state.isActive ? 'active' : ''} `}>
+          <nav id="sidebar" className={`bg-dark text-center ${this.state.isActive ? 'active' : ''} `}>
             <div className=" mt-1 border-bottom">
               <img
                 src={bajo}
