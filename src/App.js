@@ -5,8 +5,9 @@ import Navbar from './components/navbar/Navbar';
 import Home from './components/home/Home'
 import AdvertiseCreate from './components/advertise/AdvertiseCreate'
 import Footer from './components/footer/Footer';
+import Login from './components/login/Login'
 // import Dashboard from './components/dashboard/Dashboard'
-import Dashboard from './components/dashboard2/Dashboard'
+import Dashboard from './components/dashboard2/Dashboard';
 import './assests/css/global.css';
 // import Slide from './components/dashboard/burgermenu/sidebar'
 export const history = createHistory();
@@ -25,6 +26,7 @@ class App extends Component {
 
             <Switch>
               <Route path='/' component={Home} exact/>
+              <Route path='/login' component={Login}/>
               <Route path='/advertise' component={AdvertiseCreate}/>
               <Route path='/dashboard' component={Dashboard} exact/>
               {/*<Route path='/dashboard2' component={Dashboard2}/>*/}
