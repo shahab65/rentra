@@ -66,9 +66,12 @@ class Header extends React.Component {
                   <DropdownItem tag={Link} to="/dashboard">
                     حساب کاربری
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/login">
-                    ورود
-                  </DropdownItem>
+                    <DropdownItem tag={Link} to="/login">
+                        ورود
+                    </DropdownItem>
+                    <DropdownItem tag={Link} to="/signup">
+                        ثبت نام
+                    </DropdownItem>
                   <DropdownItem tag={Link} to="/dashboard2">
                     داشبورد2
                   </DropdownItem>

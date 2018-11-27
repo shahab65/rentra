@@ -6,16 +6,18 @@ import {
     FormGroup, Label, Input,
     Button,
 } from 'reactstrap';
-import './login.css';
+import './signup.css';
 import * as Yup from "yup";
 
-class Login extends Component {
+class Signup extends Component {
     render() {
         return (
             <Formik
                 validateOnBlur={true}
                 initialValues={{
                     phone: '',
+                    name:'',
+                    lastName:''
                 }}
                 validationSchema={Yup.object().shape({
 
@@ -24,34 +26,64 @@ class Login extends Component {
                             "لطفا یک شماره تلفن معتبر وارد کنید.")
                         .required("لطفا این قسمت را تکمیل کنید."),
 
+                    name: Yup.string()
+                        .required("لطفا این قسمت را تکمیل کنید."),
+                    lastName: Yup.string()
+                        .required("لطفا این قسمت را تکمیل کنید."),
+
                 })}
                 onSubmit={(values) => {
                     const data = {
                         "phone": values.phone,
 
                     };
-                    console.log(data);
+                    console.log(values);
                 }}
                 render={({values, touched, errors}) => (
             <div className="container my-5 ">
                 <div className="row justify-content-center">
                     <div className="col-sm-6">
-                        <div className="login bg-dark  my-4 py-3">
+                        <div className="signup bg-dark  my-4 py-3">
                             <Form>
                                 <div className="form-group mb-4">
-
-                                    <h1 className="login__title">ورود</h1>
-                                    <p className="login__text">
-                                        لطفا برای ورود شماره تلفن خود را وارد کنید.
+                                    <h1 className="signup__title">ثبت نام</h1>
+                                    <p className="signup__text">
+                                        لطفا برای ثبت نام اطلاعات خود را وارد کنید.
                                     </p>
+                                    <div className="form-group">
+                                        <label htmlFor="name">نام</label>
+                                        <Field
+                                            name="name"
+                                            type="text"
+                                            className="form-control"
+                                            autoFocus
+                                            placeholder="نام"
+                                        />
+                                        {touched.name && errors.name &&
+                                        <div className="invalid-feedback">
+                                            {errors.name}
+                                        </div>}
+                                    </div>
+                                    <div className="form-group">
+                                        <label htmlFor="lastName">نام خانوادگی</label>
+                                        <Field
+                                            name="lastName"
+                                            type="text"
+                                            className="form-control"
+                                            placeholder="نام خانوادگی"
+                                        />
+                                        {touched.lastName && errors.lastName &&
+                                        <div className="invalid-feedback">
+                                            {errors.lastName}
+                                        </div>}
+                                    </div>
+
                                     <div className="form-group">
                                         <label htmlFor="phone"> شماره تلفن</label>
                                         <Field
                                             name="phone"
                                             type="text"
-                                            autoFocus
                                             className={`form-control ${values.phone&& 'ltr'}`}                                            placeholder="شماره تلفن"
-                                            placeholder="شماره تلفن"
                                         />
                                         {touched.phone && errors.phone &&
                                         <div className="invalid-feedback">
@@ -79,4 +111,4 @@ class Login extends Component {
     }
 }
 
-export default Login;
+export default Signup;
