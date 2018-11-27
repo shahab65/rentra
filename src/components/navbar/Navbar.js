@@ -38,8 +38,8 @@ class Header extends React.Component {
       <div>
 
         <Navbar  color="dark" dark expand="sm" className="nav-wrapper border-bottom">
-          {/*<Link to="/">rentra logo</Link>*/}
-          <NavbarBrand href="/">reactstrap</NavbarBrand>
+          <Link to="/">rentra logo</Link>
+          {/*<NavbarBrand href="/">reactstrap</NavbarBrand>*/}
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="mr-auto" navbar>
