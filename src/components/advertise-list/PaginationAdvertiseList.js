@@ -47,7 +47,7 @@ class PaginationAdvertiseList extends React.Component {
         <div className="row ">
           {this.state.advertiseList.map((ad, i) =>
             <div className="col-sm-3 mb-5" key={i}>
-              <AdvertiseListItem/>
+              <AdvertiseListItem count={i}/>
 
             </div>
           )}

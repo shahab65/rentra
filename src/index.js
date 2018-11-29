@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap-v4-rtl/dist/css/bootstrap-rtl.min.css'
+import 'bootstrap-v4-rtl/dist/css/bootstrap-rtl.min.css';
+import "react-image-gallery/styles/css/image-gallery.css";
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
