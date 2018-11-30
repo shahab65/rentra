@@ -6,14 +6,18 @@ import {
   CardTitle, CardSubtitle, Button, CardFooter
 } from 'reactstrap';
 import './AdvertiseListItem.css';
-import Img from '../../assests/img/test.jpg'
 
 class AdvertiseListItem extends Component {
   render() {
     return (
       <Link to={`advertise-detail/${this.props.count}`}>
-        <Card className="ad-card">
-          <CardImg top width="100%" src={Img} alt="Card image cap"/>
+        <Card>
+          <CardImg
+            className="img-thumbnail"
+            top
+            width="100%"
+            src={this.props.img}
+            alt="Card image cap"/>
 
           <CardFooter>
 

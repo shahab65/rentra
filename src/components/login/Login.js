@@ -13,7 +13,7 @@ class Login extends Component {
     render() {
         return (
             <Formik
-                validateOnBlur={true}
+                validateOnBlur={false}
                 initialValues={{
                     phone: '',
                 }}
