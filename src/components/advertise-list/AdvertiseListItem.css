@@ -23,3 +23,9 @@
     /*border-right-width: 15px;*/
     /*border-left-width: 15px;*/
 /*}*/
+
+.product-image{
+    height: 300px;
+    object-fit: scale-down;
+
+}

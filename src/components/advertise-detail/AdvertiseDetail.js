@@ -15,14 +15,14 @@ class AdvertiseDetail extends Component {
   render() {
     // console.log("img is :", Img)
     const images = [
-      // {
-      //   original: Img1,
-      //   thumbnail: Img1
-      // },
-      // {
-      //   original: Img2,
-      //   thumbnail: Img2
-      // },
+      {
+        original: Img1,
+        thumbnail: Img1
+      },
+      {
+        original: Img2,
+        thumbnail: Img2
+      },
       {
         original: Img3,
         thumbnail: Img3
@@ -58,14 +58,17 @@ class AdvertiseDetail extends Component {
             </div>
           </div>
           <div className="col-sm-6 text-left ">
-            <ImageGallery
-              items={images}
-              isRTL={true}
-              showBullets={true}
-              showIndex={true}
-              thumbnailPosition="right"
-              originalClass="img-fluid "
-            />
+            <div>
+              <ImageGallery
+                items={images}
+                isRTL={true}
+                showBullets={true}
+                showIndex={true}
+                thumbnailPosition="right"
+                originalClass="img-fluid "
+              />
+            </div>
+
 
           </div>
         </div>

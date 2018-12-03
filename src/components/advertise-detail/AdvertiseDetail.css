@@ -1,3 +1,8 @@
 .ad-slider-image{
     height: 350px;
 }
+
+.image-gallery-image img{
+    height: 400px;
+    object-fit: scale-down;
+}

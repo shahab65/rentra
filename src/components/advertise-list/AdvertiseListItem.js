@@ -13,11 +13,11 @@ class AdvertiseListItem extends Component {
       <Link to={`advertise-detail/${this.props.count}`}>
         <Card>
           <CardImg
-            className="img-thumbnail"
+            className="img-thumbnail product-image"
             top
             width="100%"
             src={this.props.img}
-            alt="Card image cap"/>
+            alt="product image"/>
 
           <CardFooter>
 
