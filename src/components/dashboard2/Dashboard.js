@@ -71,19 +71,12 @@ class App extends Component {
                   onClick={this.handleButtonClick}
                   type="button"
                   id="sidebarCollapse"
-                  className="btn btn-info">
+                  className="btn btn-dark">
                   <FaAlignRight/>
                 </button>
 
               </div>
-            <div>
-              <div> ali al ialia lai lai</div>
-              <div> ali al ialia lai lai</div>
-              <div> ali al ialia lai lai</div>
-              <div> ali al ialia lai lai</div>
-              <div> ali al ialia lai lai</div>
-              <div> ali al ialia lai lai</div>
-            </div>
+
           </div>
         </div>
 
