@@ -2,12 +2,27 @@ import React from 'react';
 import {Pagination, PaginationItem, PaginationLink} from 'reactstrap';
 import AdvertiseListItem from "./AdvertiseListItem";
 import './PaginationAdvertiseList.css';
-import Img1 from '../../assests/img/1.jpg'
-import Img2 from '../../assests/img/2.jpg'
-import Img3 from '../../assests/img/3.jpg'
-import Img4 from '../../assests/img/4.jpg'
-import Img5 from '../../assests/img/5.jpg'
-import Img6 from '../../assests/img/6.jpg'
+import Img1 from '../../assests/img/1.jpg';
+import Img2 from '../../assests/img/2.jpg';
+import Img3 from '../../assests/img/3.jpg';
+import Img4 from '../../assests/img/4.jpg';
+import Img5 from '../../assests/img/5.jpg';
+import Img6 from '../../assests/img/6.jpg';
+import Img7 from '../../assests/img/7.jfif';
+import Img8 from '../../assests/img/8.jfif';
+import Img9 from '../../assests/img/9.jpg';
+import Img10 from '../../assests/img/10.jpg';
+import Img11 from '../../assests/img/11.jpg';
+import Img12 from '../../assests/img/12.jpg';
+import Img13 from '../../assests/img/13.jpg';
+import Img14 from '../../assests/img/14.jfif';
+import Img15 from '../../assests/img/15.jpg';
+import Img16 from '../../assests/img/16.jpg';
+import Img17 from '../../assests/img/17.jpg';
+import Img18 from '../../assests/img/18.jfif';
+import Img19 from '../../assests/img/19.png';
+import Img20 from '../../assests/img/20.jfif';
+
 
 class PaginationAdvertiseList extends React.Component {
 
@@ -85,6 +100,76 @@ class PaginationAdvertiseList extends React.Component {
           <div className="col-sm-3 mb-5">
             <AdvertiseListItem
               img={Img6}
+              count={6}/>
+          </div>
+          <div className="col-sm-3 mb-5">
+            <AdvertiseListItem
+              img={Img7}
+              count={6}/>
+          </div>
+          <div className="col-sm-3 mb-5">
+            <AdvertiseListItem
+              img={Img8}
+              count={6}/>
+          </div>
+          <div className="col-sm-3 mb-5">
+            <AdvertiseListItem
+              img={Img9}
+              count={6}/>
+          </div>
+          <div className="col-sm-3 mb-5">
+            <AdvertiseListItem
+              img={Img10}
+              count={6}/>
+          </div>
+          <div className="col-sm-3 mb-5">
+            <AdvertiseListItem
+              img={Img11}
+              count={6}/>
+          </div>
+          <div className="col-sm-3 mb-5">
+            <AdvertiseListItem
+              img={Img12}
+              count={6}/>
+          </div>
+          <div className="col-sm-3 mb-5">
+            <AdvertiseListItem
+              img={Img13}
+              count={6}/>
+          </div>
+          <div className="col-sm-3 mb-5">
+            <AdvertiseListItem
+              img={Img14}
+              count={6}/>
+          </div>
+          <div className="col-sm-3 mb-5">
+            <AdvertiseListItem
+              img={Img15}
+              count={6}/>
+          </div>
+          <div className="col-sm-3 mb-5">
+            <AdvertiseListItem
+              img={Img16}
+              count={6}/>
+          </div>
+          <div className="col-sm-3 mb-5">
+            <AdvertiseListItem
+              img={Img17}
+              count={6}/>
+          </div>
+          <div className="col-sm-3 mb-5">
+            <AdvertiseListItem
+              img={Img18}
+              count={6}/>
+          </div>
+          <div className="col-sm-3 mb-5">
+            <AdvertiseListItem
+              img={Img19}
+              count={6}/>
+          </div>
+          <div className="col-sm-3 mb-5">
+            <AdvertiseListItem
+              img={Img20}
               count={6}/>
           </div>
           {/*)}*/}

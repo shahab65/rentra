@@ -1,3 +1,17 @@
 .search-card-wrapper{
     margin-top: 50px;
 }
+
+
+
+@media only screen and (min-width: 768px) {
+    .dropdown-menu {
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .dropdown button{
+        margin-top: 1rem;
+    }
+}
+

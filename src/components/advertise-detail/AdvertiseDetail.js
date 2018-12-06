@@ -8,7 +8,7 @@ import Img4 from '../../assests/img/4.jpg';
 import Img5 from '../../assests/img/5.jpg';
 import {FaRegCalendarAlt} from 'react-icons/fa';
 import Carousel from '../carousel/Carousel';
-
+// import Calender from '../../calender/Calender'
 import './AdvertiseDetail.css';
 
 class AdvertiseDetail extends Component {
@@ -38,6 +38,7 @@ class AdvertiseDetail extends Component {
     ]
     return (
       <div className="container mt-5">
+        {/*<Calender/>*/}
         <div className="row my-5">
           <div className="col-sm-6">
             <div className="row">

@@ -11,7 +11,12 @@ class Footer extends Component {
         <div className="container">
           <div className="row mt-5 mb-4">
             <div className="col-sm-3">
-              رنترا:پلتفرم اجاره وسایل و تجهیزات
+              <p className="lead">
+                رنترا: پلتفرم آنلاین اجاره تجهیزات و وسایل
+              </p>‬
+              <p className="small">
+                پلتفرمی که در پی تسهیل فرآیند ارتباط میان اجاره کنندگان و اجاره دهندگان در یک سیستم یک پارچه است.
+              </p>
             </div>
             <div className="col-sm-2">
               <div>درباره ما</div>
@@ -45,9 +50,9 @@ class Footer extends Component {
         </div>
         <div style={{backgroundColor:"#d0d1d3"}}>
           <div className="container">
-            <div className="row mt-5 py-2">
+            <div className="row  pt-3">
               <div className="col-sm-6">
-                <p>
+                <p style={{color:"#000"}}>
                   کليه حقوق اين سایت متعلق به شرکت رنترا است.
                 </p>
               </div>
@@ -56,17 +61,23 @@ class Footer extends Component {
                 <ul className="list-inline">
                   <li className="list-inline-item">
                     <a href="#">
-                      <FaTelegramPlane />
+                      <h3>
+                        <FaTelegramPlane />
+                      </h3>
                     </a>
                   </li>
                   <li className="list-inline-item pr-2">
                     <a href="#">
-                      <FaInstagram />
+                      <h3>
+                        <FaInstagram />
+                      </h3>
                     </a>
                   </li>
                   <li className="list-inline-item">
                     <a href="#">
-                      <FaGoogle />
+                      <h3>
+                        <FaGoogle />
+                      </h3>
                     </a>
                   </li>
                 </ul>

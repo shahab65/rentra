@@ -20,14 +20,15 @@ class SearchCard extends Component {
               <div className="col-sm-2">
                 <UncontrolledDropdown>
                   <DropdownToggle caret>
-                    Dropdown
+                    زیردسته ها
                   </DropdownToggle>
                   <DropdownMenu>
-                    <DropdownItem header>Header</DropdownItem>
-                    <DropdownItem disabled>Action</DropdownItem>
-                    <DropdownItem>Another Action</DropdownItem>
-                    <DropdownItem divider/>
-                    <DropdownItem>Another Action</DropdownItem>
+                    <DropdownItem>تجهیزات ساختمانی</DropdownItem>
+                    <DropdownItem>تجهیزات سینمایی</DropdownItem>
+                    <DropdownItem>تجهیزات کارگاهی</DropdownItem>
+                    <DropdownItem>تجهیزات کوهنوردی و سفر</DropdownItem>
+                    <DropdownItem>تجهیزات نمایشگاهی</DropdownItem>
+                    <DropdownItem>ماشین آلات و ادوات کشاورزی</DropdownItem>
                   </DropdownMenu>
                 </UncontrolledDropdown>
               </div>

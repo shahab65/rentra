@@ -15,7 +15,9 @@ import {
   NavbarBrand
 } from 'reactstrap';
 import {FaUser} from 'react-icons/fa';
-import './Navbar.css'
+import rentraLogo from '../../assests/img/rentra-logo.png';
+import './Navbar.css';
+
 
 class Header extends React.Component {
 
@@ -38,7 +40,9 @@ class Header extends React.Component {
       <div>
 
         <Navbar  color="dark" dark expand="sm" className="nav-wrapper border-bottom">
-          <Link to="/">rentra logo</Link>
+          <Link to="/">
+            <img src={rentraLogo} alt=""/>
+          </Link>
           {/*<NavbarBrand href="/">reactstrap</NavbarBrand>*/}
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
