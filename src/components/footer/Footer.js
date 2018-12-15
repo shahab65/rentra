@@ -7,7 +7,7 @@ import cafeBazaar from '../../assests/img/cafebazaar.png';
 class Footer extends Component {
   render() {
     return (
-      <div className="footer-wrapper bg-dark" id="footer">
+      <footer className="footer-wrapper bg-dark" id="footer">
         <div className="container">
           <div className="row mt-5 mb-4">
             <div className="col-sm-3">
@@ -87,7 +87,7 @@ class Footer extends Component {
           </div>
         </div>
 
-      </div>
+      </footer>
     );
   }
 }
