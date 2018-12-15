@@ -18,18 +18,18 @@ class Footer extends Component {
                 پلتفرمی که در پی تسهیل فرآیند ارتباط میان اجاره کنندگان و اجاره دهندگان در یک سیستم یک پارچه است.
               </p>
             </div>
-            <div className="col-sm-2">
-              <div>درباره ما</div>
-              <div>توافق نامه</div>
-              <div>تماس با ما</div>
+            <div className="col-sm-2 text-center text-sm-right">
+              <p>درباره ما</p>
+              <p>توافق نامه</p>
+              <p>تماس با ما</p>
             </div>
-            <div className="col-sm-2">
-              <div>شرایط و قوانین</div>
-              <div>حریم خصوصی</div>
-              <div>سوالات متداول</div>
+            <div className="col-sm-2 text-center text-sm-right">
+              <p>شرایط و قوانین</p>
+              <p>حریم خصوصی</p>
+              <p>سوالات متداول</p>
             </div>
-            <div className="col-sm-2">
-              <div>دانلود اپلیکیشن</div>
+            <div className="col-sm-2 text-center text-sm-right">
+              <p className="d-none d-sm-block">دانلود اپلیکیشن</p>
               <div className="m-1">
                 <a href="#" target='_blank'
                    title='دانلود اپلیکیشن رنترا از سایت google play'>
@@ -56,7 +56,7 @@ class Footer extends Component {
                   کليه حقوق اين سایت متعلق به شرکت رنترا است.
                 </p>
               </div>
-              <div className="col-sm-6 text-left">
+              <div className="col-sm-6 text-center text-sm-left">
 
                 <ul className="list-inline">
                   <li className="list-inline-item">
